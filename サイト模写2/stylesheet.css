@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body{
+    width:100%;
+}
+
+header{
+    
+    height:270px;
+    justify-content:spcae-between;
+    align-items:center;
+    margin:0 auto;
+}
+
+.header-wrapper{
+    height:270px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 130px auto;
+
+}
+
+.site-title{
+    display:inline-block;
+}
+
+nav{
+    margin-left:250px;
+}
+
+.list{
+    display:flex;
+    list-style:none;
+ 
+    
+}
+
+.list-botton{
+
+    margin-left:30px;
+}
+
+a{
+    text-decoration:none;
+  color:black;
+}
+
+.icon{
+    width:20px;
+    height:20px;
+}
+
+.mainvisual-picture{
+    width:100%;
+}
+
+.section-about{
+    margin:80px 280px 130px 280px;
+    width:960px;
+    text-align:center;
+}
+
+.about-title{
+    padding-bottom:50px;
+}
+.artist-information{
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+    padding-bottom:10px;
+}
+
+.about-artist{
+    text-align:left;
+}
+
+.artist-name{
+    padding-bottom:10px;
+}
+
+.section-works{
+    width:960px;
+    height:700px;
+    text-align:center;
+    margin:0 280px;
+}
+
+
+
+.works-pictures ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.works-pictures li{
+    width:31%;
+}
+
+.works-pictures li img{
+    width:100%;
+    margin:20px;
+}
+
+.section-news{
+    text-align:center;
+    margin:0 280px;
+    padding:0 65px;
+}
+
+.section-news dl{
+    display:flex;
+    flex-wrap:wrap;
+    
+    border-top:solid 1px #c8c8c8;
+}
+
+.section-news dt{
+    width:20%;
+    padding:15px;
+    border-bottom:solid 1px #c8c8c8;
+
+}
+
+.section-news dd{
+    width:80%;
+    padding:15px;
+    border-bottom:solid 1px #c8c8c8;
+    margin:0;
+}
+
+.section-contact{
+    margin:150px auto;
+    max-width:960px;
+    padding:15px 65px;
+    
+
+}
+
+h4{
+    text-align:center;
+    margin-bottom:65px;
+}
+
+.forms .a{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+
+.forms p{
+    margin-bottom:10px;
+    display:inline-block;
+    width:10%;
+}
+
+.inputName{
+    display:inline-block;
+    width:80%;
+    padding:10px;
+    margin-bottom:10px;
+    border: solid 1px #c8c8c8;
+}
+
+.inputEmail{
+    width:80%;
+    padding:10px;
+    margin-bottom:10px;
+    border: solid 1px #c8c8c8;
+}
+
+.textareaMessage{
+    width:80%;
+    padding:10px;
+    border: solid 1px #c8c8c8;
+}
+
+
+
+.submit{
+    margin:20px auto 0 auto;
+    cursor:pointer;
+    padding:12px 80px;
+    display:block;
+    background-color:#24292E;
+    color:white;
+}
+
+.submit:hover{
+    color:black;
+    background-color:white;
+}
+
+footer{
+    background-color:#24292E;
+    color:white;
+    text-align:center;
+    padding:5px 0;
+    font-size:10px
+}
